@@ -198,4 +198,3 @@ This project demonstrates a **practical, modular, and industry‑aligned securit
 
 ---
 
-**Prepared by:** Security & Security‑AI Module
