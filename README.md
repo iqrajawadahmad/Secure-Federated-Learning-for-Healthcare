@@ -44,7 +44,7 @@ The end-to-end flow is:
 
 ---
 
-## Security Mechanisms Implemented
+## Security Mechanisms
 
 ### Client Authentication
 Each hospital is assigned a unique client ID and secret token. The server validates the token before processing any update. This prevents unauthorized or fake institutions from contributing malicious data.
@@ -86,13 +86,6 @@ The system was tested against simulated security threats:
 
 These simulations validate that the security layer successfully filters out adversarial updates while preserving legitimate collaboration.
 
----
-
-## Impact and Relevance
-
-This project demonstrates a practical, industry-aligned solution for privacy-preserving machine learning in healthcare. It combines concepts from cybersecurity, distributed systems, and responsible AI to build a trustworthy FL pipeline for sensitive applications.
-
-It is highly relevant to domains where data privacy, security, and trust are non-negotiable, including healthcare, biomedical research, and regulated AI deployments.
 
 ---
 
@@ -106,5 +99,5 @@ It is highly relevant to domains where data privacy, security, and trust are non
 - Python-based implementation and experimentation
 
 ---
-emic, research, and scholarship-focused discussions.
+
 
