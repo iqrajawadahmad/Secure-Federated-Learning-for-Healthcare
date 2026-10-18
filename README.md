@@ -106,25 +106,5 @@ It is highly relevant to domains where data privacy, security, and trust are non
 - Python-based implementation and experimentation
 
 ---
-
-## Future Directions
-
-Planned extensions include:
-
-- Differential Privacy for stronger privacy guarantees
-- Secure Multi-Party Computation (SMPC) for aggregation
-- Blockchain-based audit trails
-- Automated anomaly detection for malicious updates
-
----
-
-## CV / Scholarship Ready Summary
-
-Developed a secure Federated Learning framework for healthcare collaboration that preserves patient privacy while protecting against fake clients, model poisoning, tampering, and forged updates. By integrating client authentication, SHA-256 hashing, HMAC-based signatures, and secure validation before aggregation, the project demonstrates strong skills in privacy-preserving AI, cybersecurity, and trustworthy systems design. The work is highly relevant to modern healthcare AI applications and aligns with responsible, compliance-aware machine learning practices.
-
----
-
-## Conclusion
-
-This project showcases a secure, modular, and application-driven approach to Federated Learning in healthcare. It illustrates how AI systems can be designed to be both privacy-preserving and resilient to adversarial behavior, making it a strong candidate for academic, research, and scholarship-focused discussions.
+emic, research, and scholarship-focused discussions.
 
