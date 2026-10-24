@@ -44,7 +44,17 @@ The end-to-end flow is:
 
 ---
 
-## Security Mechanisms
+## Machine Learning Notebook and Saved Weights
+
+The `ct.ipynb` notebook uses scikit-learn's Logistic Regression with the breast cancer dataset. It trains a centralized model and also contains an experimental simulation that divides the data into three hospital groups and attempts to aggregate their model parameters.
+
+The notebook's save cell writes the centralized model's `coef_` and `intercept_` to `trained_weights.npy`. The `run_demo.py` script loads these values and uses them as the weights in its secure-update, model-poisoning, and fake-client demonstrations. This file contains model parameters only; it does not contain patient records, the scaler, or the federated model's aggregated parameters.
+
+The hospital split in the current notebook is experimental: the first hospital's consecutive data slice contains only class 0, but the initialization code searches that slice for both classes. As a result, the federated-training section may stop with an index error before it completes. The centralized model and saved-weight security demo are separate from that federated-training result.
+
+---
+
+## Security Mechanisms Implemented
 
 ### Client Authentication
 Each hospital is assigned a unique client ID and secret token. The server validates the token before processing any update. This prevents unauthorized or fake institutions from contributing malicious data.
@@ -86,6 +96,13 @@ The system was tested against simulated security threats:
 
 These simulations validate that the security layer successfully filters out adversarial updates while preserving legitimate collaboration.
 
+---
+
+## Impact and Relevance
+
+This project demonstrates a practical, industry-aligned solution for privacy-preserving machine learning in healthcare. It combines concepts from cybersecurity, distributed systems, and responsible AI to build a trustworthy FL pipeline for sensitive applications.
+
+It is highly relevant to domains where data privacy, security, and trust are non-negotiable, including healthcare, biomedical research, and regulated AI deployments.
 
 ---
 
@@ -101,3 +118,6 @@ These simulations validate that the security layer successfully filters out adve
 ---
 
 
+## Conclusion
+
+This project showcases a secure, modular, and application-driven approach to Federated Learning in healthcare. It illustrates how AI systems can be designed to be both privacy-preserving and resilient to adversarial behavior, making it a strong candidate for academic, research, and scholarship-focused discussions.
